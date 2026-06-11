@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["WK649QF382.rocketbase.Rocket-eTicket"],
+        "components": [
+          {
+            "/": "/ticket/*",
+            "comment": "Open ticket detail by UUID"
+          }
+        ]
+      }
+    ]
+  }
+}
