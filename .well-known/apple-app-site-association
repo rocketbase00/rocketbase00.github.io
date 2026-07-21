@@ -5,8 +5,12 @@
         "appIDs": ["WK649QF382.rocketbase.Rocket-eTicket"],
         "components": [
           {
-            "/": "/ticket/*",
+            "/": "/rocketeticket/ticket/*",
             "comment": "Open ticket detail by UUID"
+          },
+          {
+            "/": "/ticket/*",
+            "comment": "Legacy path kept for existing calendar events"
           }
         ]
       }
