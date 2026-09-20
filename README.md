@@ -90,7 +90,7 @@ Apple/Branch の AASA バリデータ: [branch.io/resources/aasa-validator/](htt
         "appIDs": ["WK649QF382.rocketbase.Rocket-eTicket"],
         "components": [
           {
-            "/": "/ticket/*"
+            "/": "/rocketeticket/ticket/*"
           }
         ]
       }
@@ -101,7 +101,7 @@ Apple/Branch の AASA バリデータ: [branch.io/resources/aasa-validator/](htt
 
 - `WK649QF382`: Apple Developer Team ID
 - `rocketbase.Rocket-eTicket`: アプリの Bundle ID
-- `/ticket/*`: このパスのみアプリで開く
+- `/rocketeticket/ticket/*`: このパスのみアプリで開く（アプリが作るチケットのリンク `https://rocketbase00.github.io/rocketeticket/ticket/{UUID}` に対応。旧パス `/ticket/*` は廃止）
 
 ## 注意点
 
@@ -111,7 +111,7 @@ Apple/Branch の AASA バリデータ: [branch.io/resources/aasa-validator/](htt
 
 ## 関連するアプリ側の設定（既に対応済み）
 
-- `Rocket_eTicket.entitlements`: `applinks:eticket.rocketbase.co.jp` 追加
-- `CalendarManager`: カレンダーイベントの URL を `https://eticket.rocketbase.co.jp/ticket/{UUID}` に
+- `Rocket_eTicket.entitlements`: `applinks:rocketbase00.github.io`
+- `Ticket.universalLinkURL`: カレンダーイベント・通知の URL は `https://rocketbase00.github.io/rocketeticket/ticket/{UUID}`
 - `Rocket_eTicketApp`: `onContinueUserActivity` で Universal Link を受け取り
-- `ContentView`: handleDeepLink で https と旧 `rocketeticket://` の両方をパース
+- `Ticket.ticketId(fromDeepLink:)`: 上のパスと、ウィジェットが開く `rocketeticket://ticket/{UUID}` だけを受け付ける
