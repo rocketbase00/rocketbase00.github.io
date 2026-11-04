@@ -23,15 +23,22 @@
 <body>
 
 <h1>🎫 Rocket eTicket プライバシーポリシー</h1>
-<p class="meta">制定日: 2026年7月21日<br>運営者: 株式会社ロケットベース</p>
+<p class="meta">制定日: 2026年7月21日<br>改定日: 2026年11月4日<br>運営者: 株式会社ロケットベース</p>
 
 <p>本ポリシーは、iOSアプリ「Rocket eTicket」（以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
 
 <h2>1. 開発者による情報収集</h2>
 <p>本アプリは、開発者が利用者の個人情報やチケット情報を収集・保存するためのサーバーを持ちません。登録されたチケット（画像・PDF・日時・座席・メモ・写真など）は、すべて利用者の端末内、および利用者自身のiCloudアカウント（プライベートデータベース）にのみ保存されます。開発者がこれらのデータにアクセスすることはできません。</p>
 
-<h2>2. AIによるチケット情報の抽出</h2>
-<p>チケットのタイトル・日時・会場などの自動抽出は、Appleのオンデバイス AI（Foundation Models）および文字認識（Vision）を用いて、すべて端末内で処理されます。チケット画像やその内容が、開発者または第三者のサーバーへ送信されることはありません。</p>
+<h2>2. AIによるチケット情報の読み取りと旅のしおり</h2>
+<p>チケットのタイトル・日時・会場などの読み取りと、旅のしおりの文章の作成は、通常、Appleのオンデバイス AI（Foundation Models）および文字認識（Vision）を用いて端末内で処理されます。この場合、チケット画像やその内容が、開発者または第三者のサーバーへ送信されることはありません。</p>
+<p>利用者が本アプリの「AI（APIキー）」の設定で自分のAPIキーを入力し、外部のAI（Anthropic社のClaude、OpenAI社のChatGPT、Google社のGemini）を使うAIに選んだ場合に限り、次の情報が本アプリから選んだ会社のAPIへ直接送信されます。開発者のサーバーを経由することはなく、開発者がこれらの情報を受け取ることもありません。</p>
+<ul>
+  <li>取り込むチケットから読み取った文字（PDFや画像から認識した文字、メールやWebページの本文など）。チケットの画像やファイルそのものは送信しません</li>
+  <li>旅のしおりを作る旅程の予定（予定の名前・日時・場所など）</li>
+</ul>
+<p>APIキーを保存する前に、送信する内容と送信先を表示し、利用者の同意を得ます。送信された情報は、選んだ会社の規約とプライバシーポリシーに従い、利用者自身のAPIアカウントのもとで取り扱われ、料金も利用者のアカウントに請求されます。Google社のGeminiの無料枠のキーを使う場合、送信した内容がGoogle社の製品の改善に使われることがあります。</p>
+<p>APIキーはこの端末のキーチェーンにのみ保存され、iCloudやバックアップには含まれず、開発者に送信されることもありません。外部のAIを使うかどうかは設定でいつでも変更でき、「使わない」を選ぶと、どこにも送信しません。</p>
 
 <h2>3. 外部への通信</h2>
 <p>本アプリが端末の外部と通信するのは、次の場合に限られます。</p>
@@ -39,6 +46,7 @@
   <li>iCloudによる同期（Apple / CloudKit）</li>
   <li>カレンダー・通知・マップ表示・移動時間の計算などAppleのシステムサービスの利用</li>
   <li>利用者が追加したWebリンクのプレビュー取得（該当Webサイトへのアクセス）</li>
+  <li>利用者が外部のAIを選んだ場合の、その会社（Anthropic・OpenAI・Google）のAPIへの送信（第2条）</li>
   <li>サブスクリプションの購入・復元（App Store / StoreKit）。支払いはAppleが処理し、開発者が氏名やカード情報などを受け取ることはありません</li>
 </ul>
 
@@ -67,18 +75,25 @@
 <hr class="divider">
 
 <h1>Privacy Policy (English)</h1>
-<p class="meta">Effective date: July 21, 2026<br>Operator: ROCKET BASE, CO., LTD.</p>
+<p class="meta">Effective date: July 21, 2026<br>Last updated: November 4, 2026<br>Operator: ROCKET BASE, CO., LTD.</p>
 
 <p>This policy describes how the iOS app "Rocket eTicket" (the "App") handles user information.</p>
 
 <h2>1. Data Collection by the Developer</h2>
 <p>The App has no developer-operated server that collects or stores personal information. Your tickets (images, PDFs, dates, seats, memos, photos, etc.) are stored only on your device and in your own iCloud account (private database). The developer cannot access this data.</p>
 
-<h2>2. On-Device AI Extraction</h2>
-<p>Automatic extraction of ticket details (title, date, venue, etc.) is performed entirely on your device using Apple's on-device AI (Foundation Models) and text recognition (Vision). Ticket images and their contents are never sent to the developer or any third-party server.</p>
+<h2>2. AI Ticket Reading and Trip Itineraries</h2>
+<p>Reading ticket details (title, date, venue, etc.) and writing trip itineraries are normally performed on your device using Apple's on-device AI (Foundation Models) and text recognition (Vision). In that case, ticket images and their contents are never sent to the developer or any third-party server.</p>
+<p>Only if you enter your own API key under "AI (API Keys)" in the App's settings and choose an external AI (Claude by Anthropic, ChatGPT by OpenAI, or Gemini by Google) is the following information sent directly from the App to the API of the company you choose. It does not pass through any developer server, and the developer never receives it.</p>
+<ul>
+  <li>Text read from the tickets you import (text recognized in PDFs and images, and the body of emails and web pages). Ticket images and files themselves are not sent</li>
+  <li>The plans in a trip used to write its itinerary (names, dates, places, etc.)</li>
+</ul>
+<p>Before an API key is saved, the App shows what will be sent and to whom, and asks for your consent. The information sent is handled under your own API account according to the chosen company's terms and privacy policy, and any charges are billed to your account. If you use a free-tier Gemini key, what you send may be used by Google to improve its products.</p>
+<p>API keys are stored only in this device's keychain; they are not included in iCloud or backups and are never sent to the developer. You can change whether an external AI is used at any time in Settings, and choosing "None" sends nothing anywhere.</p>
 
 <h2>3. Network Communication</h2>
-<p>The App communicates externally only for: iCloud sync (Apple / CloudKit); Apple system services such as Calendar, notifications, Maps, and travel-time calculation; fetching previews of web links you add; and subscription purchases via the App Store (payment is processed by Apple, and the developer never receives your name or payment details).</p>
+<p>The App communicates externally only for: iCloud sync (Apple / CloudKit); Apple system services such as Calendar, notifications, Maps, and travel-time calculation; fetching previews of web links you add; sending to the API of an external AI company (Anthropic, OpenAI or Google) when you choose one (Section 2); and subscription purchases via the App Store (payment is processed by Apple, and the developer never receives your name or payment details).</p>
 
 <h2>4. Device Permissions</h2>
 <p>Camera (scanning paper tickets), Photos (importing ticket images, saving barcode images), Calendar (syncing ticket events), Location while using the app (calculating travel time to the venue), and Notifications (reminders). Each is used only for the corresponding feature, and none of this data leaves your device.</p>

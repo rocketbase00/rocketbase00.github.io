@@ -39,13 +39,16 @@
 <p>「今後」タブの「＋」から、PDF・写真・カメラでのスキャンを選べます。メールやブラウザで開いた予約確認は、共有シートから Rocket eTicket を選んでも取り込めます。日時・会場・座席などは自動で読み取られ、確認画面で直せます。チケットが無い予定は「手動で作成」で登録できます。</p>
 
 <h3>読み取った日時や会場が違う</h3>
-<p>取り込み時の確認画面か、チケット詳細の「編集」で直せます。読み取りは端末内で処理され、チケットの内容が外部に送られることはありません。</p>
+<p>取り込み時の確認画面か、チケット詳細の「編集」で直せます。読み取りはふだん端末内で処理され、チケットの内容が外部に送られることはありません。読み取りの精度を上げたいときは、外部の AI も使えます（次の質問）。</p>
+
+<h3>外部の AI（Claude・ChatGPT・Gemini）を使うには？</h3>
+<p>「…」→「設定」→「AI（APIキー）」で、使いたい AI の API キーを入れ、使う AI に選びます。選んだときだけ、取り込むチケットから読み取った文字と、旅のしおりを作る旅程の予定が、その AI の会社に送られます（開発者のサーバーは通りません）。料金はキーのアカウントにかかり、既定のモデルなら、チケット1,000枚の読み取りで約1〜5ドルが目安です。「使わない」を選べば、どこにも送りません。詳しくは<a href="../privacy/">プライバシーポリシー</a>の第2条をご覧ください。</p>
 
 <h3>当日、ロック画面に表示されない</h3>
 <p>iOS の「設定」→「Rocket eTicket」で「ライブアクティビティ」がオンになっているか、アプリ内の「…」→「ダイナミックアイランドの表示」でその種類がオンになっているかをご確認ください。表示は当日の予定が対象で、開演・出発の数時間前からロック画面とダイナミックアイランドに出ます。</p>
 
 <h3>Pro（サブスクリプション）について</h3>
-<p>無料版ではチケットを20件まで登録できます。Pro ではチケット登録が無制限になり、旅程のまとめ表示と旅のしおりが使えます。月額・年額のプランがあり、初回は7日間の無料トライアル付きです。期間終了の24時間前までに解約しない限り自動的に更新されます。</p>
+<p>無料版ではチケットを20件まで登録できます。Pro ではチケットの登録が無制限になります。旅程・旅のしおり・振り返りなど、ほかの機能はすべて無料です。月額・年額のプランがあり、初回は7日間の無料トライアル付きです。期間終了の24時間前までに解約しない限り自動的に更新されます。</p>
 <p>解約・管理は iOS の「設定」→ ユーザー名 →「サブスクリプション」から行えます。機種変更などで Pro が反映されないときは、購入画面の「購入を復元」をお試しください。</p>
 
 <h3>iCloud で同期されない</h3>
@@ -59,7 +62,7 @@
 <p>削除したチケットは30日間「最近削除した項目」に残り、そこから戻せます。</p>
 
 <h3>データはどこに保存される？</h3>
-<p>チケットのデータは、お使いの端末と、ご自身の iCloud アカウントにのみ保存されます。開発者がアクセスできるサーバーはありません。詳しくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</p>
+<p>チケットのデータは、お使いの端末と、ご自身の iCloud アカウントにのみ保存されます。開発者がアクセスできるサーバーはありません。外部の AI を選んだときは、読み取りとしおりのための文字だけが、その AI の会社に送られます。詳しくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</p>
 
 <hr class="divider">
 
@@ -77,13 +80,16 @@
 <p>Tap “+” on the Upcoming tab to add a PDF, a photo, or scan a paper ticket with the camera. You can also share a confirmation email or web page to Rocket eTicket from the share sheet. Dates, venues, and seats are read automatically and can be corrected on the confirmation screen. For bookings without a ticket file, use “Create manually”.</p>
 
 <h3>The extracted date or venue is wrong</h3>
-<p>You can fix it on the confirmation screen or later via “Edit” in the ticket detail. Extraction runs on your device; ticket contents are never sent anywhere.</p>
+<p>You can fix it on the confirmation screen or later via “Edit” in the ticket detail. Extraction normally runs on your device, and ticket contents are never sent anywhere. For better accuracy, you can also use an external AI (see the next question).</p>
+
+<h3>How do I use an external AI (Claude, ChatGPT or Gemini)?</h3>
+<p>In “…” → Settings → “AI (API Keys)”, enter an API key for the AI you want and choose it. Only then are the text read from the tickets you import and the plans used for trip itineraries sent to that AI company (not through any developer server). Usage is billed to the key’s account; with the default models, reading 1,000 tickets costs about $1–5. Choosing “None” sends nothing anywhere. See Section 2 of the <a href="../privacy/">Privacy Policy</a> for details.</p>
 
 <h3>Nothing shows on the Lock Screen on the day</h3>
 <p>Check that Live Activities are enabled for Rocket eTicket in iOS Settings, and that the ticket type is enabled under “…” → “Dynamic Island Display” in the app. The Live Activity covers today’s ticket and appears a few hours before showtime or departure.</p>
 
 <h3>About Pro (subscription)</h3>
-<p>The free version stores up to 20 tickets. Pro removes the limit and adds Trips and AI itineraries. Monthly and yearly plans are available, each with a 7-day free trial. The subscription renews automatically unless canceled at least 24 hours before the end of the current period.</p>
+<p>The free version stores up to 20 tickets. Pro removes the limit. Everything else, including Trips, AI itineraries, and Recap, is free. Monthly and yearly plans are available, each with a 7-day free trial. The subscription renews automatically unless canceled at least 24 hours before the end of the current period.</p>
 <p>Manage or cancel in iOS Settings → your name → Subscriptions. If Pro is not recognized after switching devices, tap “Restore Purchases” on the purchase screen.</p>
 
 <h3>iCloud sync is not working</h3>
@@ -97,7 +103,7 @@
 <p>Deleted tickets stay in Recently Deleted for 30 days and can be restored from there.</p>
 
 <h3>Where is my data stored?</h3>
-<p>Only on your device and in your own iCloud account. There is no developer server. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+<p>Only on your device and in your own iCloud account. There is no developer server. If you choose an external AI, only the text needed for reading tickets and writing itineraries is sent to that AI company. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
 
 </body>
 </html>
