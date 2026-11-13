@@ -23,12 +23,12 @@
 <body>
 
 <h1>🎫 Rocket eTicket プライバシーポリシー</h1>
-<p class="meta">制定日: 2026年7月21日<br>改定日: 2026年11月11日<br>運営者: 株式会社ロケットベース</p>
+<p class="meta">制定日: 2026年7月21日<br>改定日: 2026年11月13日<br>運営者: 株式会社ロケットベース</p>
 
 <p>本ポリシーは、iOSアプリ「Rocket eTicket」（以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
 
 <h2>1. 開発者による情報収集</h2>
-<p>本アプリは、開発者が利用者の個人情報やチケット情報を収集・保存するためのサーバーを持ちません。登録されたチケット（画像・PDF・日時・座席・メモ・写真など）は、すべて利用者の端末内、および利用者自身のiCloudアカウント（プライベートデータベース）にのみ保存されます。開発者がこれらのデータにアクセスすることはできません。</p>
+<p>本アプリは、利用者のチケットを開発者のサーバーに送信・保存しません。登録されたチケット（画像・PDF・日時・座席・メモ・写真など）は、すべて利用者の端末内、および利用者自身のiCloudアカウント（プライベートデータベース）にのみ保存されます。開発者がこれらのデータにアクセスすることはできません。本アプリが開発者のサーバーと通信するのは、第3条の展覧会・ライブの検索だけです。</p>
 
 <h2>2. AIによるチケット情報の読み取りと、旅程・旅のしおりの作成</h2>
 <p>チケットのタイトル・日時・会場などの読み取り、旅のしおりの文章の作成、および「AIと計画する」「AIと予定を足す」による旅程の予定の案の作成は、通常、Appleのオンデバイス AI（Foundation Models）および文字認識（Vision）を用いて端末内で処理されます。この場合、チケット画像やその内容が、開発者または第三者のサーバーへ送信されることはありません。</p>
@@ -48,8 +48,11 @@
   <li>カレンダー・通知・マップ表示・移動時間の計算などAppleのシステムサービスの利用</li>
   <li>利用者が追加したWebリンクのプレビュー取得（該当Webサイトへのアクセス）</li>
   <li>利用者が外部のAIを選んだ場合の、その会社（Anthropic・OpenAI・Google）のAPIへの送信（第2条）</li>
+  <li>旅程の「過ごし方を探す」で「展覧会」「ライブ」を探す場合の、開発者が運営するサーバーへの問い合わせ（下記）</li>
   <li>サブスクリプションの購入・復元（App Store / StoreKit）。支払いはAppleが処理し、開発者が氏名やカード情報などを受け取ることはありません</li>
 </ul>
+<p>旅程の編集の「過ごし方を探す」で「展覧会」または「ライブ」を選ぶと、その日の日付と都道府県（ライブでは、旅程の拠点（その日に泊まる宿や予定の場所）がある都道府県。例：東京都。展覧会では、拠点の近くにある美術館の都道府県で、日本の外では国）を、開発者が運営するサービス art（美術館の展覧会の情報。api.art.108note.com）または Live Info（ライブの情報。api.musicbase.jp）のサーバーに送り、その日に開かれている展覧会・ライブの情報を受け取ります。展覧会を探すときは、美術館の一覧（所在地を含む）も受け取ります。拠点の位置・宿の名前・チケットの内容・端末の位置情報・アカウントや端末の識別子は送りません。都道府県は、拠点の位置からAppleのマップを使って端末で決めます。</p>
+<p>これらのサーバーは、セキュリティの確保、不正な利用への対処、障害の調査のために、通信の日時・IPアドレス・検索の条件（日付と都道府県・国）をログに残すことがあります。ログは、セキュリティの確保と監査に必要な期間保存し、その後削除します。ログを利用者個人と結びつけることはなく、法令に基づく場合を除き、第三者に提供することはありません。</p>
 
 <h2>4. 利用する端末の権限</h2>
 <ul>
@@ -76,12 +79,12 @@
 <hr class="divider">
 
 <h1>Privacy Policy (English)</h1>
-<p class="meta">Effective date: July 21, 2026<br>Last updated: November 11, 2026<br>Operator: ROCKET BASE, CO., LTD.</p>
+<p class="meta">Effective date: July 21, 2026<br>Last updated: November 13, 2026<br>Operator: ROCKET BASE, CO., LTD.</p>
 
 <p>This policy describes how the iOS app "Rocket eTicket" (the "App") handles user information.</p>
 
 <h2>1. Data Collection by the Developer</h2>
-<p>The App has no developer-operated server that collects or stores personal information. Your tickets (images, PDFs, dates, seats, memos, photos, etc.) are stored only on your device and in your own iCloud account (private database). The developer cannot access this data.</p>
+<p>The App never sends your tickets to, or stores them on, a developer server. Your tickets (images, PDFs, dates, seats, memos, photos, etc.) are stored only on your device and in your own iCloud account (private database). The developer cannot access this data. The only communication between the App and developer servers is the exhibition and concert search described in Section 3.</p>
 
 <h2>2. AI Ticket Reading, Trip Planning and Itineraries</h2>
 <p>Reading ticket details (title, date, venue, etc.), writing trip itineraries, and suggesting plans with “Plan with AI” and “Add Plans with AI” are normally performed on your device using Apple's on-device AI (Foundation Models) and text recognition (Vision). In that case, ticket images and their contents are never sent to the developer or any third-party server.</p>
@@ -95,7 +98,9 @@
 <p>API keys are stored only in this device's keychain; they are not included in iCloud or backups and are never sent to the developer. You can change whether an external AI is used at any time in Settings, and choosing "None" sends nothing anywhere.</p>
 
 <h2>3. Network Communication</h2>
-<p>The App communicates externally only for: iCloud sync (Apple / CloudKit); Apple system services such as Calendar, notifications, Maps, and travel-time calculation; fetching previews of web links you add; sending to the API of an external AI company (Anthropic, OpenAI or Google) when you choose one (Section 2); and subscription purchases via the App Store (payment is processed by Apple, and the developer never receives your name or payment details).</p>
+<p>The App communicates externally only for: iCloud sync (Apple / CloudKit); Apple system services such as Calendar, notifications, Maps, and travel-time calculation; fetching previews of web links you add; sending to the API of an external AI company (Anthropic, OpenAI or Google) when you choose one (Section 2); searching for exhibitions and concerts on developer-operated servers in a trip’s “Find things to do” (below); and subscription purchases via the App Store (payment is processed by Apple, and the developer never receives your name or payment details).</p>
+<p>When you choose “Exhibitions” or “Concerts” in “Find things to do” while editing a trip, the App sends the date and a prefecture (for concerts, the prefecture where the trip’s base for that day is, meaning the place you stay or your plans that day, for example Tokyo; for exhibitions, the prefectures of museums near the base, or the country outside Japan) to the servers of art (museum exhibition information, api.art.108note.com) or Live Info (concert information, api.musicbase.jp), services operated by the developer, and receives the exhibitions or concerts on that day. When searching for exhibitions, the App also receives the list of museums, including their locations. The location of the base, the name of where you stay, the contents of your tickets, your device’s location, and account or device identifiers are not sent. The prefecture is determined on your device from the base’s location using Apple Maps.</p>
+<p>These servers may log the time of access, IP address and search conditions (date and prefecture or country) to keep the service secure, deal with abuse, and investigate problems. Logs are kept for as long as needed for security and auditing, and then deleted. Logs are never linked to individual users and are not provided to third parties except as required by law.</p>
 
 <h2>4. Device Permissions</h2>
 <p>Camera (scanning paper tickets), Photos (importing ticket images, saving barcode images), Calendar (syncing ticket events), Location while using the app (calculating travel time to the venue), and Notifications (reminders). Each is used only for the corresponding feature, and none of this data leaves your device.</p>
