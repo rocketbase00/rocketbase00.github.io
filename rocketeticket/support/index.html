@@ -42,7 +42,10 @@
 <p>取り込み時の確認画面か、チケット詳細の「編集」で直せます。読み取りはふだん端末内で処理され、チケットの内容が外部に送られることはありません。読み取りの精度を上げたいときは、外部の AI も使えます（次の質問）。</p>
 
 <h3>外部の AI（Claude・ChatGPT・Gemini）を使うには？</h3>
-<p>「…」→「設定」→「AI（APIキー）」で、使いたい AI の API キーを入れ、使う AI に選びます。選んだときだけ、チケットの取り込み・再スキャン・差し替えで読み取った文字、旅のしおりを作る旅程の予定（旅程を開いたときに自動で作るときも含む）、「AIと計画する」「AIと予定を足す」で入れた行き先・したいこと・頼みとその旅程の予定が、その AI の会社に送られます（開発者のサーバーは通りません）。料金はキーのアカウントにかかり、既定のモデルなら、チケット1,000枚の読み取りで約1〜5ドルが目安です。「使わない」を選べば、どこにも送りません。詳しくは<a href="../privacy/">プライバシーポリシー</a>の第2条をご覧ください。</p>
+<p>「…」→「設定」→「AI（APIキー）」で、使いたい AI の API キーを入れ、使う AI に選びます。選んだときだけ、チケットの取り込み・再スキャン・差し替えで読み取った文字、旅のしおりを作る旅程の予定（旅程を開いたときに自動で作るときも含む）、「AIと計画する」「AIと予定を足す」で入れた行き先・したいこと・頼みとその旅程の予定が、その AI の会社に送られます（開発者のサーバーは通りません）。料金はキーのアカウントにかかり、既定のモデルなら、チケット1,000枚の読み取りで約1〜5ドルが目安です。「使わない」を選べば、外部の AI には送りません。詳しくは<a href="../privacy/">プライバシーポリシー</a>の第2条をご覧ください。</p>
+
+<h3>旅のしおりの文は、どこで作られますか？</h3>
+<p>iOS 27 以降の Apple Intelligence 対応機種では、Apple の Private Cloud Compute（Apple のサーバーで動く AI）で作ります。送るのは旅程の名前と予定の要約、書き直すときの文と指示だけで、電話番号・メールアドレスは伏せます。Apple も開発者も中身を見られず、保存もされない仕組みです。1日に使える回数に上限があり、上限に達したときやネットにつながらないときは端末内の AI で作ります。「…」→「設定」→「AI（APIキー）」の「Apple の Private Cloud Compute」でオフにすると、いつも端末内で作ります。外部の AI を選んでいるときは、そちらを先に使います。詳しくは<a href="../privacy/">プライバシーポリシー</a>の第2条をご覧ください。</p>
 
 <h3>当日、ロック画面に表示されない</h3>
 <p>iOS の「設定」→「Rocket eTicket」で「ライブアクティビティ」がオンになっているか、アプリ内の「…」→「ダイナミックアイランドの表示」でその種類がオンになっているかをご確認ください。表示は当日の予定が対象で、開演・出発の数時間前からロック画面とダイナミックアイランドに出ます。</p>
@@ -62,7 +65,7 @@
 <p>削除したチケットは30日間「最近削除した項目」に残り、そこから戻せます。</p>
 
 <h3>データはどこに保存される？</h3>
-<p>チケットのデータは、お使いの端末と、ご自身の iCloud アカウントにのみ保存されます。開発者がチケットにアクセスできるサーバーはありません。外部の AI を選んだときは、読み取り・しおり・旅程の案作りのための文字だけが、その AI の会社に送られます。旅程の「過ごし方を探す」で「展覧会」「ライブ」を探すときは、日付と都道府県（日本の外では国）だけを、開発者が運営する art・Live Info のサーバーに送ります。詳しくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</p>
+<p>チケットのデータは、お使いの端末と、ご自身の iCloud アカウントにのみ保存されます。開発者がチケットにアクセスできるサーバーはありません。外部の AI を選んだときは、読み取り・しおり・旅程の案作りのための文字だけが、その AI の会社に送られます。iOS 27 以降の対応機種では、旅のしおりを作るための旅程の予定の要約を、Apple の Private Cloud Compute に送ります（設定でオフにできます）。旅程の「過ごし方を探す」で「展覧会」「ライブ」を探すときは、日付と都道府県（日本の外では国）だけを、開発者が運営する art・Live Info のサーバーに送ります。詳しくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</p>
 
 <hr class="divider">
 
@@ -83,7 +86,10 @@
 <p>You can fix it on the confirmation screen or later via “Edit” in the ticket detail. Extraction normally runs on your device, and ticket contents are never sent anywhere. For better accuracy, you can also use an external AI (see the next question).</p>
 
 <h3>How do I use an external AI (Claude, ChatGPT or Gemini)?</h3>
-<p>In “…” → Settings → “AI (API Keys)”, enter an API key for the AI you want and choose it. Only then are the text read from tickets when you import, rescan or replace them, the plans used for trip itineraries (including when one is written automatically as you open a trip), and the destination, wishes or request you enter in “Plan with AI” or “Add Plans with AI” along with that trip’s plans sent to that AI company (not through any developer server). Usage is billed to the key’s account; with the default models, reading 1,000 tickets costs about $1–5. Choosing “None” sends nothing anywhere. See Section 2 of the <a href="../privacy/">Privacy Policy</a> for details.</p>
+<p>In “…” → Settings → “AI (API Keys)”, enter an API key for the AI you want and choose it. Only then are the text read from tickets when you import, rescan or replace them, the plans used for trip itineraries (including when one is written automatically as you open a trip), and the destination, wishes or request you enter in “Plan with AI” or “Add Plans with AI” along with that trip’s plans sent to that AI company (not through any developer server). Usage is billed to the key’s account; with the default models, reading 1,000 tickets costs about $1–5. Choosing “None” sends nothing to an external AI. See Section 2 of the <a href="../privacy/">Privacy Policy</a> for details.</p>
+
+<h3>Where is the trip itinerary text written?</h3>
+<p>On Apple Intelligence devices with iOS 27 or later, it is written with Apple’s Private Cloud Compute (AI running on Apple’s servers). Only the trip name, a summary of its plans, and the text and instructions for a rewrite are sent, with phone numbers and email addresses masked. Neither Apple nor the developer can see the content, and it is not stored. There is a daily usage limit; after reaching it, or when you are offline, the text is written with on-device AI. Turn off “Apple Private Cloud Compute” in “…” → Settings → “AI (API Keys)” to always write it on your device. If you choose an external AI, that AI is used first. See Section 2 of the <a href="../privacy/">Privacy Policy</a> for details.</p>
 
 <h3>Nothing shows on the Lock Screen on the day</h3>
 <p>Check that Live Activities are enabled for Rocket eTicket in iOS Settings, and that the ticket type is enabled under “…” → “Dynamic Island Display” in the app. The Live Activity covers today’s ticket and appears a few hours before showtime or departure.</p>
@@ -103,7 +109,7 @@
 <p>Deleted tickets stay in Recently Deleted for 30 days and can be restored from there.</p>
 
 <h3>Where is my data stored?</h3>
-<p>Only on your device and in your own iCloud account. No developer server holds your tickets. If you choose an external AI, only the text needed for reading tickets, writing itineraries and suggesting plans is sent to that AI company. When you search for “Exhibitions” or “Concerts” in a trip’s “Find things to do”, only the date and prefecture (or country outside Japan) are sent to art and Live Info, servers operated by the developer. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+<p>Only on your device and in your own iCloud account. No developer server holds your tickets. If you choose an external AI, only the text needed for reading tickets, writing itineraries and suggesting plans is sent to that AI company. On supported devices with iOS 27 or later, a summary of a trip’s plans is sent to Apple’s Private Cloud Compute to write its itinerary (you can turn this off in Settings). When you search for “Exhibitions” or “Concerts” in a trip’s “Find things to do”, only the date and prefecture (or country outside Japan) are sent to art and Live Info, servers operated by the developer. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
 
 </body>
 </html>
