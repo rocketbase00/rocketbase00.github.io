@@ -36,14 +36,14 @@
 <ul>
   <li>チケットを取り込むとき、および保存したチケットを再スキャン・差し替えで読み直すときに読み取った文字（PDFや画像から認識した文字、メールやWebページの本文など。名前・日時・会場・座席・予約番号などを含むことがあります）。チケットの画像やファイルそのものは送信しません</li>
   <li>旅のしおりを作る旅程の名前と予定の要約（予定の名前・日時・場所など）、および書き直す文と指示。旅程を開いたときに、しおりが自動で作られる場合も含みます</li>
-  <li>振り返りの旅のひとことを作る旅の名前と記録の要約（記録の名前・日付・場所、移動の距離、泊数など）。振り返りで旅を開いたときに、ひとことが自動で作られる場合も含みます。予約番号・座席・メモ・金額は送信しません</li>
+  <li>振り返りの旅のひとことを作る旅の名前と記録の要約（記録の名前・日付・場所、移動の距離、泊数、件数など）。振り返りで旅を開いたときに、ひとことが自動で作られる場合も含みます。予約番号・座席・メモ・金額は送信しません</li>
 </ul>
 <p>電話番号・メールアドレス・カード番号などは伏せて送信します。Private Cloud Computeは、送信された情報を依頼の処理だけに使って保存せず、Appleも開発者も内容を見ることができない仕組みです（<a href="https://security.apple.com/blog/private-cloud-compute/">Appleによる説明</a>）。開発者のサーバーを経由することはなく、開発者がこれらの情報を受け取ることもありません。「AIと計画する」「AIと予定を足す」「AIの案」では使いません。この機能は「AI（APIキー）」の設定の「AppleのPrivate Cloud Compute」で、旅のしおり・振り返りとチケットの読み取りのそれぞれについていつでもオフにでき、オフのときや使えないとき（ネットにつながらない、1日の上限に達したなど）は端末内で処理します。外部のAI（次の段落）を選んでいる場合は、そちらを先に使います。</p>
 <p>利用者が本アプリの「AI（APIキー）」の設定で自分のAPIキーを入力し、外部のAI（Anthropic社のClaude、OpenAI社のChatGPT、Google社のGemini）を使うAIに選んだ場合に限り、次の情報が本アプリから選んだ会社のAPIへ直接送信されます。開発者のサーバーを経由することはなく、開発者がこれらの情報を受け取ることもありません。</p>
 <ul>
   <li>チケットを取り込むとき、および保存したチケットを再スキャン・差し替えで読み直すときに読み取った文字（PDFや画像から認識した文字、メールやWebページの本文など）。チケットの画像やファイルそのものは送信しません</li>
   <li>旅のしおりを作る旅程の予定（予定の名前・日時・場所など）。旅程を開いたときに、しおりが自動で作られる場合も含みます</li>
-  <li>振り返りの旅のひとことを作る旅の名前と記録（記録の名前・日付・場所、移動の距離、泊数など）。振り返りで旅を開いたときに、ひとことが自動で作られる場合も含みます。予約番号・座席・メモ・金額は送信しません</li>
+  <li>振り返りで「振り返りのひとことを作る」を押したときの、旅の名前と記録の要約（記録の名前・日付・場所、移動の距離、泊数、件数など）。外部のAIには、開いただけでは送信しません。予約番号・座席・メモ・金額は送信しません</li>
   <li>「AIと計画する」で入力した行き先・日程・ペース・したいこと、および「AIと予定を足す」で入力した頼みの文とその旅程の予定（予定の名前・日時・場所など）。予約番号・座席・メモ・金額は送信しません</li>
   <li>旅程の「過ごし方を探す」の「AIの案」で案を出すときの、その日の予定（予定の名前・日時・場所など）と行きたいところ（日付を決めていない予定）の名前。予約番号・座席・メモ・金額は送信しません</li>
   <li>上記の案の候補として、AppleのマップやartとLive Info（第3条）で見つけた場所・展覧会（美術館）・ライブ（会場・開演の時刻）の名前と種類、およびおおよその場所（住所の一部や拠点からの距離）</li>
@@ -104,14 +104,14 @@
 <ul>
   <li>Text read from tickets when you import them, or when you rescan or replace a saved ticket (text recognized in PDFs and images, and the body of emails and web pages, which may include names, dates, venues, seats, booking numbers and so on). Ticket images and files themselves are not sent</li>
   <li>The trip name and a summary of its plans (names, dates, places, etc.) used to write its itinerary, and the text and instructions for a rewrite, including when the itinerary is written automatically as you open a trip</li>
-  <li>The trip name and a summary of its records (names, dates and places of the records, distance traveled, nights stayed, etc.) used to write its Recap line, including when the line is written automatically as you open the trip in Recap. Booking numbers, seats, notes and prices are not sent</li>
+  <li>The trip name and a summary of its records (names, dates and places of the records, distance traveled, nights stayed, number of tickets, etc.) used to write its Recap line, including when the line is written automatically as you open the trip in Recap. Booking numbers, seats, notes and prices are not sent</li>
 </ul>
 <p>Phone numbers, email addresses, card numbers and similar details are masked before sending. Private Cloud Compute uses what is sent only to fulfill the request, does not store it, and is designed so that neither Apple nor the developer can see it (<a href="https://security.apple.com/blog/private-cloud-compute/">Apple’s description</a>). It does not pass through any developer server, and the developer never receives it. It is not used for “Plan with AI”, “Add Plans with AI” or “AI Ideas”. You can turn it off at any time, separately for trip itineraries and Recap lines and for reading tickets, under “Apple Private Cloud Compute” in the App’s “AI (API Keys)” settings; when it is off or unavailable (for example, offline or after reaching the daily limit), the work is done on your device. If you choose an external AI (next paragraph), that AI is used first.</p>
 <p>Only if you enter your own API key under "AI (API Keys)" in the App's settings and choose an external AI (Claude by Anthropic, ChatGPT by OpenAI, or Gemini by Google) is the following information sent directly from the App to the API of the company you choose. It does not pass through any developer server, and the developer never receives it.</p>
 <ul>
   <li>Text read from tickets when you import them, or when you rescan or replace a saved ticket (text recognized in PDFs and images, and the body of emails and web pages). Ticket images and files themselves are not sent</li>
   <li>The plans in a trip used to write its itinerary (names, dates, places, etc.), including when the itinerary is written automatically as you open a trip</li>
-  <li>The trip name and its records (names, dates and places of the records, distance traveled, nights stayed, etc.) used to write its Recap line, including when the line is written automatically as you open the trip in Recap. Booking numbers, seats, notes and prices are not sent</li>
+  <li>When you tap “Write a Line About This Trip” in Recap, the trip name and a summary of its records (names, dates and places of the records, distance traveled, nights stayed, number of tickets, etc.). Nothing is sent to an external AI just by opening a trip. Booking numbers, seats, notes and prices are not sent</li>
   <li>The destination, dates, pace and “What You’d Like to Do” you enter in “Plan with AI”, and the request you enter in “Add Plans with AI” together with the plans in that trip (names, dates, places, etc.). Booking numbers, seats, notes and prices are not sent</li>
   <li>When you ask for “AI Ideas” in a trip’s “Find things to do”, that day’s plans (names, dates, places, etc.) and the names of your Places to Go (plans without a day). Booking numbers, seats, notes and prices are not sent</li>
   <li>As candidates for these suggestions, the names and types of places, exhibitions (with the museum) and concerts (with the venue and start time) found with Apple Maps or with art and Live Info (Section 3), and their approximate locations (part of the address or the distance from the base)</li>
