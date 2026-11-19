@@ -23,7 +23,7 @@
 <body>
 
 <h1>🎫 Rocket eTicket プライバシーポリシー</h1>
-<p class="meta">制定日: 2026年7月21日<br>改定日: 2026年11月16日<br>運営者: 株式会社ロケットベース</p>
+<p class="meta">制定日: 2026年7月21日<br>改定日: 2026年11月19日<br>運営者: 株式会社ロケットベース</p>
 
 <p>本ポリシーは、iOSアプリ「Rocket eTicket」（以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
 
@@ -31,30 +31,32 @@
 <p>本アプリは、利用者のチケットを開発者のサーバーに送信・保存しません。登録されたチケット（画像・PDF・日時・座席・メモ・写真など）は、すべて利用者の端末内、および利用者自身のiCloudアカウント（プライベートデータベース）にのみ保存されます。開発者がこれらのデータにアクセスすることはできません。本アプリが開発者のサーバーと通信するのは、第3条の展覧会・ライブの検索だけです。</p>
 
 <h2>2. AIによるチケット情報の読み取りと、旅程・旅のしおりの作成</h2>
-<p>チケットのタイトル・日時・会場などの読み取り、旅のしおりの文章の作成、「AIと計画する」「AIと予定を足す」による旅程の予定の案の作成、および旅程の「過ごし方を探す」の「AIの案」による空き時間の過ごし方の案の作成は、Appleのオンデバイス AI（Foundation Models）および文字認識（Vision）を用いて端末内で処理されます。この場合、チケット画像やその内容が、開発者または第三者のサーバーへ送信されることはありません。ただし、iOS 27以降の対応機種でのチケットの読み取りと旅のしおりの文章の作成は、次の段落のとおりです。</p>
-<p>iOS 27以降のApple Intelligence対応機種では、チケットの読み取りと、旅のしおりの文章（導入文・各日のひとこと・✨による書き直し）の作成を、AppleのPrivate Cloud Compute（Appleのサーバーで動くAI）で行います。このとき、次の情報が本アプリからAppleのPrivate Cloud Computeに送信されます。</p>
+<p>チケットのタイトル・日時・会場などの読み取り、旅のしおりの文章の作成、振り返りの旅のひとことの作成、「AIと計画する」「AIと予定を足す」による旅程の予定の案の作成、および旅程の「過ごし方を探す」の「AIの案」による空き時間の過ごし方の案の作成は、Appleのオンデバイス AI（Foundation Models）および文字認識（Vision）を用いて端末内で処理されます。この場合、チケット画像やその内容が、開発者または第三者のサーバーへ送信されることはありません。ただし、iOS 27以降の対応機種でのチケットの読み取りと、旅のしおりの文章・振り返りの旅のひとことの作成は、次の段落のとおりです。</p>
+<p>iOS 27以降のApple Intelligence対応機種では、チケットの読み取りと、旅のしおりの文章（導入文・各日のひとこと・✨による書き直し）と振り返りの旅のひとことの作成を、AppleのPrivate Cloud Compute（Appleのサーバーで動くAI）で行います。このとき、次の情報が本アプリからAppleのPrivate Cloud Computeに送信されます。</p>
 <ul>
   <li>チケットを取り込むとき、および保存したチケットを再スキャン・差し替えで読み直すときに読み取った文字（PDFや画像から認識した文字、メールやWebページの本文など。名前・日時・会場・座席・予約番号などを含むことがあります）。チケットの画像やファイルそのものは送信しません</li>
   <li>旅のしおりを作る旅程の名前と予定の要約（予定の名前・日時・場所など）、および書き直す文と指示。旅程を開いたときに、しおりが自動で作られる場合も含みます</li>
+  <li>振り返りの旅のひとことを作る旅の名前と記録の要約（記録の名前・日付・場所、移動の距離、泊数など）。振り返りで旅を開いたときに、ひとことが自動で作られる場合も含みます。予約番号・座席・メモ・金額は送信しません</li>
 </ul>
-<p>電話番号・メールアドレス・カード番号などは伏せて送信します。Private Cloud Computeは、送信された情報を依頼の処理だけに使って保存せず、Appleも開発者も内容を見ることができない仕組みです（<a href="https://security.apple.com/blog/private-cloud-compute/">Appleによる説明</a>）。開発者のサーバーを経由することはなく、開発者がこれらの情報を受け取ることもありません。「AIと計画する」「AIと予定を足す」「AIの案」では使いません。この機能は「AI（APIキー）」の設定の「AppleのPrivate Cloud Compute」で、旅のしおりとチケットの読み取りのそれぞれについていつでもオフにでき、オフのときや使えないとき（ネットにつながらない、1日の上限に達したなど）は端末内で処理します。外部のAI（次の段落）を選んでいる場合は、そちらを先に使います。</p>
+<p>電話番号・メールアドレス・カード番号などは伏せて送信します。Private Cloud Computeは、送信された情報を依頼の処理だけに使って保存せず、Appleも開発者も内容を見ることができない仕組みです（<a href="https://security.apple.com/blog/private-cloud-compute/">Appleによる説明</a>）。開発者のサーバーを経由することはなく、開発者がこれらの情報を受け取ることもありません。「AIと計画する」「AIと予定を足す」「AIの案」では使いません。この機能は「AI（APIキー）」の設定の「AppleのPrivate Cloud Compute」で、旅のしおり・振り返りとチケットの読み取りのそれぞれについていつでもオフにでき、オフのときや使えないとき（ネットにつながらない、1日の上限に達したなど）は端末内で処理します。外部のAI（次の段落）を選んでいる場合は、そちらを先に使います。</p>
 <p>利用者が本アプリの「AI（APIキー）」の設定で自分のAPIキーを入力し、外部のAI（Anthropic社のClaude、OpenAI社のChatGPT、Google社のGemini）を使うAIに選んだ場合に限り、次の情報が本アプリから選んだ会社のAPIへ直接送信されます。開発者のサーバーを経由することはなく、開発者がこれらの情報を受け取ることもありません。</p>
 <ul>
   <li>チケットを取り込むとき、および保存したチケットを再スキャン・差し替えで読み直すときに読み取った文字（PDFや画像から認識した文字、メールやWebページの本文など）。チケットの画像やファイルそのものは送信しません</li>
   <li>旅のしおりを作る旅程の予定（予定の名前・日時・場所など）。旅程を開いたときに、しおりが自動で作られる場合も含みます</li>
+  <li>振り返りの旅のひとことを作る旅の名前と記録（記録の名前・日付・場所、移動の距離、泊数など）。振り返りで旅を開いたときに、ひとことが自動で作られる場合も含みます。予約番号・座席・メモ・金額は送信しません</li>
   <li>「AIと計画する」で入力した行き先・日程・ペース・したいこと、および「AIと予定を足す」で入力した頼みの文とその旅程の予定（予定の名前・日時・場所など）。予約番号・座席・メモ・金額は送信しません</li>
   <li>旅程の「過ごし方を探す」の「AIの案」で案を出すときの、その日の予定（予定の名前・日時・場所など）と行きたいところ（日付を決めていない予定）の名前。予約番号・座席・メモ・金額は送信しません</li>
   <li>上記の案の候補として、AppleのマップやartとLive Info（第3条）で見つけた場所・展覧会（美術館）・ライブ（会場・開演の時刻）の名前と種類、およびおおよその場所（住所の一部や拠点からの距離）</li>
 </ul>
 <p>APIキーを保存する前に、送信する内容と送信先を表示し、利用者の同意を得ます。送信された情報は、選んだ会社の規約とプライバシーポリシーに従い、利用者自身のAPIアカウントのもとで取り扱われ、料金も利用者のアカウントに請求されます。各社は、不正な利用を見張るためなどに、送信された内容をそれぞれの規約に従って一定期間保存することがあります。Google社のGeminiの無料枠のキーを使う場合、送信した内容がGoogle社の製品の改善に使われ、人が読むこともあります。</p>
-<p>APIキーはこの端末のキーチェーンにのみ保存され、iCloudやバックアップには含まれず、開発者に送信されることもありません。外部のAIを使うかどうかは設定でいつでも変更でき、「使わない」を選ぶと、外部のAIには送信しません（チケットの読み取りと旅のしおりは、上記のPrivate Cloud Computeがオンの場合、Appleに送信します）。</p>
+<p>APIキーはこの端末のキーチェーンにのみ保存され、iCloudやバックアップには含まれず、開発者に送信されることもありません。外部のAIを使うかどうかは設定でいつでも変更でき、「使わない」を選ぶと、外部のAIには送信しません（チケットの読み取りと、旅のしおり・振り返りの旅のひとことは、上記のPrivate Cloud Computeがオンの場合、Appleに送信します）。</p>
 
 <h2>3. 外部への通信</h2>
 <p>本アプリが端末の外部と通信するのは、次の場合に限られます。</p>
 <ul>
   <li>iCloudによる同期（Apple / CloudKit）</li>
   <li>カレンダー・通知・マップ（地図の表示・場所の検索・移動時間の計算）などAppleのシステムサービスの利用</li>
-  <li>チケットの読み取りと旅のしおりの文章の作成での、AppleのPrivate Cloud Computeへの送信（第2条。設定でオフにできます）</li>
+  <li>チケットの読み取りと、旅のしおりの文章・振り返りの旅のひとことの作成での、AppleのPrivate Cloud Computeへの送信（第2条。設定でオフにできます）</li>
   <li>「URLから追加」や共有で受け取ったWebページの読み込みと、利用者が追加したWebリンクのプレビュー取得（該当Webサイトへのアクセス）</li>
   <li>利用者が外部のAIを選んだ場合の、その会社（Anthropic・OpenAI・Google）のAPIへの送信（第2条）</li>
   <li>旅程の「過ごし方を探す」で展覧会・ライブを探す場合（「展覧会」「ライブ」「AIの案」と、行きたいところの展覧会の会期の確かめ）の、開発者が運営するサーバーへの問い合わせ（下記）</li>
@@ -89,7 +91,7 @@
 <hr class="divider">
 
 <h1>Privacy Policy (English)</h1>
-<p class="meta">Effective date: July 21, 2026<br>Last updated: November 16, 2026<br>Operator: ROCKET BASE, CO., LTD.</p>
+<p class="meta">Effective date: July 21, 2026<br>Last updated: November 19, 2026<br>Operator: ROCKET BASE, CO., LTD.</p>
 
 <p>This policy describes how the iOS app "Rocket eTicket" (the "App") handles user information.</p>
 
@@ -97,26 +99,28 @@
 <p>The App never sends your tickets to, or stores them on, a developer server. Your tickets (images, PDFs, dates, seats, memos, photos, etc.) are stored only on your device and in your own iCloud account (private database). The developer cannot access this data. The only communication between the App and developer servers is the exhibition and concert search described in Section 3.</p>
 
 <h2>2. AI Ticket Reading, Trip Planning and Itineraries</h2>
-<p>Reading ticket details (title, date, venue, etc.), writing trip itineraries, suggesting plans with “Plan with AI” and “Add Plans with AI”, and suggesting ways to spend free time with “AI Ideas” in a trip’s “Find things to do” are performed on your device using Apple's on-device AI (Foundation Models) and text recognition (Vision). In that case, ticket images and their contents are never sent to the developer or any third-party server. However, on supported devices with iOS 27 or later, reading tickets and writing trip itineraries work as described in the next paragraph.</p>
-<p>On Apple Intelligence devices with iOS 27 or later, tickets are read, and the text of trip itineraries (the introduction, each day’s headline, and ✨ rewrites) is written, with Apple’s Private Cloud Compute (AI running on Apple’s servers). In that case, the following information is sent from the App to Apple’s Private Cloud Compute.</p>
+<p>Reading ticket details (title, date, venue, etc.), writing trip itineraries, writing the one-line look back on a trip in Recap, suggesting plans with “Plan with AI” and “Add Plans with AI”, and suggesting ways to spend free time with “AI Ideas” in a trip’s “Find things to do” are performed on your device using Apple's on-device AI (Foundation Models) and text recognition (Vision). In that case, ticket images and their contents are never sent to the developer or any third-party server. However, on supported devices with iOS 27 or later, reading tickets and writing trip itineraries and Recap lines work as described in the next paragraph.</p>
+<p>On Apple Intelligence devices with iOS 27 or later, tickets are read, and the text of trip itineraries (the introduction, each day’s headline, and ✨ rewrites) and the one-line look back on a trip in Recap are written, with Apple’s Private Cloud Compute (AI running on Apple’s servers). In that case, the following information is sent from the App to Apple’s Private Cloud Compute.</p>
 <ul>
   <li>Text read from tickets when you import them, or when you rescan or replace a saved ticket (text recognized in PDFs and images, and the body of emails and web pages, which may include names, dates, venues, seats, booking numbers and so on). Ticket images and files themselves are not sent</li>
   <li>The trip name and a summary of its plans (names, dates, places, etc.) used to write its itinerary, and the text and instructions for a rewrite, including when the itinerary is written automatically as you open a trip</li>
+  <li>The trip name and a summary of its records (names, dates and places of the records, distance traveled, nights stayed, etc.) used to write its Recap line, including when the line is written automatically as you open the trip in Recap. Booking numbers, seats, notes and prices are not sent</li>
 </ul>
-<p>Phone numbers, email addresses, card numbers and similar details are masked before sending. Private Cloud Compute uses what is sent only to fulfill the request, does not store it, and is designed so that neither Apple nor the developer can see it (<a href="https://security.apple.com/blog/private-cloud-compute/">Apple’s description</a>). It does not pass through any developer server, and the developer never receives it. It is not used for “Plan with AI”, “Add Plans with AI” or “AI Ideas”. You can turn it off at any time, separately for trip itineraries and for reading tickets, under “Apple Private Cloud Compute” in the App’s “AI (API Keys)” settings; when it is off or unavailable (for example, offline or after reaching the daily limit), the work is done on your device. If you choose an external AI (next paragraph), that AI is used first.</p>
+<p>Phone numbers, email addresses, card numbers and similar details are masked before sending. Private Cloud Compute uses what is sent only to fulfill the request, does not store it, and is designed so that neither Apple nor the developer can see it (<a href="https://security.apple.com/blog/private-cloud-compute/">Apple’s description</a>). It does not pass through any developer server, and the developer never receives it. It is not used for “Plan with AI”, “Add Plans with AI” or “AI Ideas”. You can turn it off at any time, separately for trip itineraries and Recap lines and for reading tickets, under “Apple Private Cloud Compute” in the App’s “AI (API Keys)” settings; when it is off or unavailable (for example, offline or after reaching the daily limit), the work is done on your device. If you choose an external AI (next paragraph), that AI is used first.</p>
 <p>Only if you enter your own API key under "AI (API Keys)" in the App's settings and choose an external AI (Claude by Anthropic, ChatGPT by OpenAI, or Gemini by Google) is the following information sent directly from the App to the API of the company you choose. It does not pass through any developer server, and the developer never receives it.</p>
 <ul>
   <li>Text read from tickets when you import them, or when you rescan or replace a saved ticket (text recognized in PDFs and images, and the body of emails and web pages). Ticket images and files themselves are not sent</li>
   <li>The plans in a trip used to write its itinerary (names, dates, places, etc.), including when the itinerary is written automatically as you open a trip</li>
+  <li>The trip name and its records (names, dates and places of the records, distance traveled, nights stayed, etc.) used to write its Recap line, including when the line is written automatically as you open the trip in Recap. Booking numbers, seats, notes and prices are not sent</li>
   <li>The destination, dates, pace and “What You’d Like to Do” you enter in “Plan with AI”, and the request you enter in “Add Plans with AI” together with the plans in that trip (names, dates, places, etc.). Booking numbers, seats, notes and prices are not sent</li>
   <li>When you ask for “AI Ideas” in a trip’s “Find things to do”, that day’s plans (names, dates, places, etc.) and the names of your Places to Go (plans without a day). Booking numbers, seats, notes and prices are not sent</li>
   <li>As candidates for these suggestions, the names and types of places, exhibitions (with the museum) and concerts (with the venue and start time) found with Apple Maps or with art and Live Info (Section 3), and their approximate locations (part of the address or the distance from the base)</li>
 </ul>
 <p>Before an API key is saved, the App shows what will be sent and to whom, and asks for your consent. The information sent is handled under your own API account according to the chosen company's terms and privacy policy, and any charges are billed to your account. Each company may retain what you send for a period of time under its own terms, for example to monitor for abuse. If you use a free-tier Gemini key, what you send may be used by Google to improve its products and may be read by people.</p>
-<p>API keys are stored only in this device's keychain; they are not included in iCloud or backups and are never sent to the developer. You can change whether an external AI is used at any time in Settings, and choosing "None" sends nothing to an external AI (text read from tickets and trip itineraries are still sent to Apple when Private Cloud Compute, described above, is on).</p>
+<p>API keys are stored only in this device's keychain; they are not included in iCloud or backups and are never sent to the developer. You can change whether an external AI is used at any time in Settings, and choosing "None" sends nothing to an external AI (text read from tickets, trip itineraries and Recap lines are still sent to Apple when Private Cloud Compute, described above, is on).</p>
 
 <h2>3. Network Communication</h2>
-<p>The App communicates externally only for: iCloud sync (Apple / CloudKit); Apple system services such as Calendar, notifications and Maps (showing maps, searching for places, and calculating travel time); sending to Apple’s Private Cloud Compute to read tickets and write trip itineraries (Section 2; can be turned off in Settings); loading web pages you open with “Add from URL” or share to the App, and fetching previews of web links you add; sending to the API of an external AI company (Anthropic, OpenAI or Google) when you choose one (Section 2); searching for exhibitions and concerts on developer-operated servers in a trip’s “Find things to do” (below); and subscription purchases via the App Store (payment is processed by Apple, and the developer never receives your name or payment details).</p>
+<p>The App communicates externally only for: iCloud sync (Apple / CloudKit); Apple system services such as Calendar, notifications and Maps (showing maps, searching for places, and calculating travel time); sending to Apple’s Private Cloud Compute to read tickets and write trip itineraries and Recap lines (Section 2; can be turned off in Settings); loading web pages you open with “Add from URL” or share to the App, and fetching previews of web links you add; sending to the API of an external AI company (Anthropic, OpenAI or Google) when you choose one (Section 2); searching for exhibitions and concerts on developer-operated servers in a trip’s “Find things to do” (below); and subscription purchases via the App Store (payment is processed by Apple, and the developer never receives your name or payment details).</p>
 <p>When you choose “Exhibitions” or “Concerts” in “Find things to do” while editing a trip (and likewise when you ask for “AI Ideas”, or when the App checks whether an exhibition in “Places to Go” is open that day), the App sends the date and a prefecture (for concerts, the prefecture where the trip’s base for that day is, meaning the place you stay or your plans that day, for example Tokyo; for exhibitions, the prefectures of museums near the base, or the country outside Japan) to the servers of art (museum exhibition information, art-api.108note.com) or Live Info (concert information, api.musicbase.jp), services operated by the developer, and receives the exhibitions or concerts on that day. When searching for exhibitions, the App also receives the list of museums, including their locations. The location of the base, the name of where you stay, the contents of your tickets, your device’s location, and account or device identifiers are not sent. The prefecture is determined on your device from the base’s location using Apple Maps.</p>
 <p>Communication with art and Live Info passes through the network of Cloudflare, Inc. (United States) for content delivery and protection against attacks. Cloudflare handles connection information such as IP addresses to deliver and protect the traffic (<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>).</p>
 <p>These servers may log the time of access, IP address and search conditions (date and prefecture or country) to keep the service secure, deal with abuse, and investigate problems. Logs are kept for as long as needed for security and auditing, and then deleted. Logs are never linked to individual users and are not provided to third parties except as required by law.</p>
